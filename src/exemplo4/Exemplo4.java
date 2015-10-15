@@ -9,11 +9,13 @@ public class Exemplo4 {
      System.out.println("altura"+rec1.getAltura());
      System.out.println("area"+rec1.calcularArea(7, 8));
      System.out.println("perimetro"+rec1.calcularPerimetro());*/
-       
-     Rectangulo rec2=new Rectangulo(5,3);
+     float base,altura;
      String resposta=JOptionPane.showInputDialog("base");
+     base=Float.parseFloat(resposta);
      String resposta1=JOptionPane.showInputDialog("altura");
-     JOptionPane.showMessageDialog(null,"Area"+rec2.calcularArea(5,3));
+     altura=Float.parseFloat(resposta1);
+     Rectangulo rec2=new Rectangulo(base,altura);
+     JOptionPane.showMessageDialog(null,"Area"+rec2.calcularArea(base,altura));
      JOptionPane.showMessageDialog(null,"perimetro"+rec2.calcularPerimetro());
      
     }
