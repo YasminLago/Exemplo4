@@ -12,8 +12,7 @@ public class Exemplo4 {
      float base,altura;
      String resposta=JOptionPane.showInputDialog("base");
      base=Float.parseFloat(resposta);
-     String resposta1=JOptionPane.showInputDialog("altura");
-     altura=Float.parseFloat(resposta1);
+     altura=Float.parseFloat(JOptionPane.showInputDialog("altura"));//Simplificación de código
      Rectangulo rec2=new Rectangulo(base,altura);
      JOptionPane.showMessageDialog(null,"Area"+rec2.calcularArea(base,altura));
      JOptionPane.showMessageDialog(null,"perimetro"+rec2.calcularPerimetro());
